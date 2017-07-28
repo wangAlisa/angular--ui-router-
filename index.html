@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flyme后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+	<link rel="stylesheet" href="css/rili.css">
+</head>
+<body ng-app="ickt">
+	<header class="header-part">
+		<div class="container">
+			<div class="pull-right">
+				<span>当前用户:&nbsp;</span>
+				<span class="yonghu" ng-bind="userName"></span>
+				<!-- 调用退出接口 -->
+				<a href="action/logout.php">退出</a>
+			</div>
+
+			<h1>
+				<img src="img/logo3.png" alt="">
+				<span>Flyme社区</span>
+			</h1>
+		</div>
+	</header>
+	<nav class="nav-part" ng-controller="navCtrl">
+		<ul>
+			<li ng-repeat="item in list">
+				<p><a ng-href="{{item.url}}" ng-bind="item.title"></a></p>
+<!-- 				<h3 ng-click="toggleChild($event)">{{item.title}}</h3>
+				<ul>
+					<li ng-repeat="childItem in item.childList"><a ng-href="{{childItem.url}}">{{childItem.title}}</a></li>
+				</ul> -->
+			</li>
+		</ul>
+	</nav>
+	<section class="main-part" ui-view></section>
+<!-- 引入脚本 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/angular-1-4-1.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

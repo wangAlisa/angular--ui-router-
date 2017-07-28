@@ -1,0 +1,442 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body {
+	/*overflow: hidden;*/
+	/*background: #efefef;*/
+}
+.header-part {
+	position: relative;
+	background: #fff;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #ccc;
+	height: 70px;
+}
+.header-part .container{
+	height: 70px;
+}
+.header-part img{
+	width: 166px;
+	height: 71px;
+}
+.header-part h1{
+	font-size: 25px;
+}
+.header-part h1 img{
+	position: absolute;
+	left: -1px;
+	top: -1px;
+}
+.header-part h1 span{
+	position: absolute;
+	left: 198px;
+	top: 20px;
+}
+.header-part .pull-right {
+	padding-top: 25px;
+}
+.header-part .pull-right .yonghu{
+	font-size: 20px;
+	color: blue;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.nav-part {
+	background: #313541;
+	width: 165px;
+	min-height: 800px;
+	float: left;
+	text-align: center;
+	margin-top: -2px;
+}
+.nav-part ul li p{
+	height: 50px;
+	line-height: 50px;
+}
+.nav-part ul li p a{
+	display: block;
+	width: 120px;
+	height: 20px;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 0 auto;
+	color: #f6f5fa;
+	/*color: #707783;*/
+	position: relative;
+}
+.nav-part ul li p a::after{
+	position: absolute;
+	left: -5px;
+	top: 15px;
+	content: "";
+	display: block;
+	width: 18.5px;
+	height: 20px;
+}
+.nav-part ul li:nth-child(1) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px 0px;
+}
+.nav-part ul li:nth-child(2) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px -58px;
+}
+.nav-part ul li:nth-child(3) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px -112px;
+}
+.nav-part ul li:nth-child(4) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px -171px;
+}
+.nav-part ul li:nth-child(5) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px -228px;
+}
+.nav-part ul li:nth-child(6) p a::after{
+	background: url(../img/icon1.png) no-repeat -18px -285px;
+}
+
+.nav-part ul li:nth-child(1):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(2):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(3):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(4):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(5):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(6):hover p a::after{
+	background-position-x: 0px;
+}
+.nav-part ul li:nth-child(1):hover{
+	background: #272a34;
+}
+.nav-part ul li:nth-child(2):hover{
+	background: #272a34;
+}
+.nav-part ul li:nth-child(3):hover{
+	background: #272a34;
+}
+.nav-part ul li:nth-child(4):hover{
+	background: #272a34;
+}
+.nav-part ul li:nth-child(5):hover{
+	background: #272a34;
+}
+.nav-part ul li:nth-child(6):hover{
+	background: #272a34;
+}
+
+.main-part {
+	margin-left: 166px;
+	min-height: 600px;
+	background: #fff;
+}
+.app-login {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: 100%;
+}
+.login-container {
+	background: #3366FF;
+	width: 330px;
+	padding: 20px;
+	position: absolute;
+	right: 250px;
+	bottom: 250px;
+	margin: -200px -220px; 
+	border-radius: 10px;
+}
+.login-container h1 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 25px;
+}
+.login-container .row {
+	margin-bottom: 10px;
+}
+.login-container .row div input{
+	background: #fff;
+}
+.text-container{
+	color: #fff;
+}
+.control-label{
+	/*width: 100px;*/
+	color: #fff;
+	font-size: 15px;
+}
+.login-container .text-container {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+.login-container .btn {
+	background: #fff;
+	font-size: 20px;
+	/*display: inline-block;*/
+	width: 100%;
+}
+
+.app-container {
+	padding: 20px;
+}
+.app-container h1 {
+	border-bottom: 1px solid #ccc;
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+.app-container .row {
+	line-height: 40px;
+	height: 40px;
+}
+.app-container .form-group {
+	height: 50px;
+	line-height: 50px;
+}
+.app-container .form-group input {
+	margin-top: 15px;
+}
+.app-container textarea {
+	display: block;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+.app-container .btn-container {
+	margin-top: 100px;
+}
+.app-container .form-radio {
+	padding-top: 5px;
+}
+.article{
+
+}
+.article h3{
+	font-size: 16px;
+}
+.article ul {
+	overflow: hidden;
+}
+.article ul li{
+	height: 40px;
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 40px;
+}
+.article ul li:hover{
+	cursor: pointer;
+	background: #efefef;
+	color: orange;
+}
+#rili {
+	position: relative;
+}
+#rili #ca{
+	position: absolute;
+	right: 70px;
+	top: -375px;
+}
+.article textarea{
+	height: 200px;
+}
+.article .btn-container{
+	width: 400px;
+	padding: 20px;
+}
+.article .btn-container .btn{
+	position: relative;
+	top: 30px;
+	left: 0px;
+	width: 100%;
+	margin: 0 auto;
+}
+.articledetail {
+	background: #313541;
+	color: #fff;
+}
+.highcontainer {
+	width: 800px;
+	height: 500px;
+	margin: 50px auto;
+}
+.text{
+
+}
+.text ul{
+	overflow: hidden;
+}
+.text ul li{
+	height: 40px;
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 40px;
+}
+.text ul li:hover{
+	cursor: pointer;
+	background: #efefef;
+	color: orange;
+}
+/*.text .row .col-lg-4 a{
+	display: block;
+	height: 30px;
+}*/
+.text .row .col-lg-4  input{
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	width: 250px;
+	background: #fff;
+}
+.bianse {
+	background: #efefef;
+}
+.text .row .bianji{
+	width: 60px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.text .row .bianji:hover{
+	background: #3366FF;
+	color: #fff;
+}
+.activitydetail h3{
+	background: #efefef;
+}
+.pictures h3{
+	background: #3366FF;
+	color: #fff;
+} 
+.pictures form{
+	width: 71px;
+	/*border-radius: 10px;*/
+	background: #3366FF;
+}
+.pictures form input{
+	opacity: 0.5;
+	margin-top: 20px;
+	width: 71px;
+	background: blue;
+	outline: none;
+}
+.pictures ul{
+	overflow: hidden;
+}
+.pictures ul li{
+	width: 1010px;
+	margin: 0 auto;
+	height: 660px;
+	margin-top: 20px;
+	margin-right: 20px;
+	float: left;
+	border: 2px dashed #ccc;
+	/*background: linear-gradient(#3366FF,#ff0097);*/
+}
+.pictures ul li img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.photo{
+	padding-top: 100px;
+}
+.photo .biansephoto h1{
+	font-size: 80px;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+}
+.ask{
+	padding-top: 50px;
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.ask h2{
+	background: #efefef;
+}
+.ask input{
+	margin-bottom: 20px;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.ask span {
+	font-size: 18px;
+}
+.ask .spn1{
+	font-size: 20px;
+	margin-right: 10px;
+}
+.ask .spn2{
+	font-size: 20px;
+	margin-left: 10px;
+}
+.moban {
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.moban input{
+	margin-bottom: 20px;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.moban p {
+	padding-left: 30%;
+}
+.moban span{
+	font-size: 20px;
+}
+.moban p button {
+	width: 150px;
+	height: 30px;
+	border: none;
+	background: blue;
+	color: #fff;
+}
+.moban p .button1 {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.moban .BMIVal{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.moban .BMIVal span{
+	font-size: 26px;
+	color: blue;
+}
+.moban ul li {
+	padding-left: 30%;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 10px;
+}

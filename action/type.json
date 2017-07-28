@@ -1,0 +1,56 @@
+{
+	"errno": 0,
+	"list": [
+		{
+			"title":"类型",
+			"childList": [
+				{
+					"title": "动作",
+					"url": "#/action"
+				},
+				{
+					"title": "喜剧",
+					"url": "#/comedy"
+				},
+				{
+					"title": "科幻",
+					"url": "#/fiction"
+				}
+			]
+		},
+		{
+			"title":"区域",
+			"childList": [
+				{
+					"title": "大陆",
+					"url": "#/china"
+				},
+				{
+					"title": "美国",
+					"url": "#/america"
+				},
+				{
+					"title": "韩国",
+					"url": "#/korea"
+				}
+			]
+		},
+		{
+			"title":"年代",
+			"childList": [
+				{
+					"title": "2017",
+					"url": "#/china"
+				},
+				{
+					"title": "2016",
+					"url": "#/america"
+				},
+				{
+					"title": "2015",
+					"url": "#/korea"
+				}
+			]
+		}
+	]
+}
